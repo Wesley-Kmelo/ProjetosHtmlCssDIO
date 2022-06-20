@@ -1,6 +1,6 @@
 # ProjetosHtmlCssDIO
 
-Este repositório contém aulas práticas do Bootcamp #TQI Fullstack Developer ministrado pela especialista [Gabriela Pinheiro](https://github.com/SpruceGabriela)
+Este repositório contém aulas práticas do Bootcamp [#TQI Fullstack Developer](https://web.dio.me/track/tqi-fullstack-developer) ministrado pela especialista [Gabriela Pinheiro](https://github.com/SpruceGabriela)
 
 Estes projetos abrangem CSS Transitions utilizando pseudo elementos e pseudo classes e também a utilização de animação usando CSS @keyframes.
 
