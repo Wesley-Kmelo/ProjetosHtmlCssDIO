@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(67, 69, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat{
+    height: 6rem;
+    width: 12rem;
+    border: 6px solid #eee;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    transform: translateY(0);
+    border-radius: 54px;
+    animation: chatAnimate 1.3s ease-in-out infinite;
+    
+}
+
+.chat::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -1.4rem;
+    left: 2rem;
+    border-left: 2px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 17px solid #eee;
+}
+
+.chat-loading:nth-child(1){
+    border: 8px solid #eee;
+    border-radius:12px;
+    animation: dot-loading 1.3s ease-in-out infinite;
+}
+
+.chat-loading:nth-child(2){
+    border: 8px solid #eee;
+    border-radius:12px;
+    animation: dot-loading 1.3s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+.chat-loading:nth-child(3){
+    border: 8px solid #eee;
+    border-radius:12px;
+    animation: dot-loading 1.3s ease-in-out infinite;
+    animation-delay: 1.9s;
+}
+
+
+@keyframes dot-loading {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.5);}
+    100%{transform: scale(1);}    
+}
+
+@keyframes chatAnimate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
